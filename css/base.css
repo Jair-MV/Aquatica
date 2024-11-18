@@ -1,0 +1,129 @@
+/* 
+    Font sizes (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    Spacing system (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    Order of properties:
+    1.- Display
+    2.- Positioning
+    3.- Box-model
+    4.- Typography
+    5.- Manipulation
+    6.- Miscelaneous
+*/
+
+/* 
+    hsl(0, 0%, 0%)
+    hsl(0, 0%, 100%)
+
+    hsl(0, 0%, 40%)
+    hsl(0, 0%, 60%)
+    hsl(0, 0%, 20%)
+*/
+
+/* *********************************** */
+/* CUSTOM PROPERTIES */
+/* *********************************** */
+:root {
+    /* Color */
+    --clr-ntrl-min: 0, 0%, 0%;
+    --clr-ntrl-max: 0, 0%, 100%;
+
+    --clr-base: 0, 0%, 40%;
+    --clr-base-lt: 0, 0%, 60%;
+    --clr-base-dk: 0, 0%, 20%;
+
+    --clr-primary: ;
+
+    --clr-primary-lt: ;
+    --clr-primary-ltr: ;
+    --clr-primary-ltst: ;
+
+    --clr-primary-dk: ;
+    --clr-primary-dkr: ;
+    --clr-primary-dkst: ;
+
+    --clr-secondary: ;
+
+    --clr-secondary-lt: ;
+    --clr-secondary-ltr: ;
+    --clr-secondary-ltst: ;
+
+    --clr-secondary-dk: ;
+    --clr-secondary-dkr: ;
+    --clr-secondary-dkst: ;
+
+    /* Font */
+    --fs-base: 1.6rem;
+
+    --ff-base: "Nunito", sans-serif;
+
+    /* Other */
+    --container-width: 120rem; /* 114rem */
+}
+
+/* ***************************** */
+/* CANVAS */
+/* ***************************** */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--clr-base);
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* *********************************** */
+/* GENERAL/REUSABLE CLASSES/COMPONENTS */
+/* *********************************** */
+.container {
+    margin: 0 auto;
+    max-width: var(--container-width);
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
+
+/* *********************************** */
+/* HELPER CLASSES / UTILITIES */
+/* *********************************** */
+.u-center-text {
+    text-align: center !important;
+}
