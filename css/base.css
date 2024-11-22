@@ -138,11 +138,40 @@ a {
     font-weight: 900;
 }
 
+.btn-cta {
+    display: inline-block;
+}
+
+.underline::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: var(--bottom-distance, 0);
+    width: 100%;
+    height: var(--thickness, 3px);
+    border-radius: 5px;
+    background-color: hsl(var(--clr-secondary));
+}
+
+.underline--animated::before {
+    width: 0;
+    transition: all 0.3s ease;
+}
+
+.underline--animated:hover::before {
+    width: 100%;
+}
+
 /* *********************************** */
 /* HELPER CLASSES / UTILITIES */
 /* *********************************** */
 .u-center-text {
     text-align: center !important;
+}
+
+.u-position-relative {
+    position: relative !important;
 }
 
 /* *********************************** */
@@ -151,8 +180,4 @@ a {
 .header,
 .section-hero {
     color: hsl(var(--clr-primary-ltst));
-}
-
-.btn-cta {
-    display: inline-block;
 }
