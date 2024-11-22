@@ -23,6 +23,7 @@
     hsl(0, 0%, 20%)
 
     hsl(208, 80%, 52%)
+    hsl(205, 100%, 95%)
     hsl(208, 74%, 21%)
     hsl(208, 74%, 10%)
 
@@ -45,7 +46,7 @@
 
     --clr-primary-lt: ;
     --clr-primary-ltr: ;
-    --clr-primary-ltst: ;
+    --clr-primary-ltst: 205, 100%, 95%;
 
     --clr-primary-dk: ;
     --clr-primary-dkr: 208, 74%, 21%;
@@ -147,3 +148,11 @@ a {
 /* *********************************** */
 /* COMMON STYLES */
 /* *********************************** */
+.header,
+.section-hero {
+    color: hsl(var(--clr-primary-ltst));
+}
+
+.btn-cta {
+    display: inline-block;
+}
