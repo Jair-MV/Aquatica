@@ -23,6 +23,8 @@
     hsl(0, 0%, 20%)
 
     hsl(208, 80%, 52%)
+    hsl(208, 74%, 21%)
+    hsl(208, 74%, 10%)
 
     hsl(27, 98%, 54%)
 */
@@ -46,8 +48,8 @@
     --clr-primary-ltst: ;
 
     --clr-primary-dk: ;
-    --clr-primary-dkr: ;
-    --clr-primary-dkst: ;
+    --clr-primary-dkr: 208, 74%, 21%;
+    --clr-primary-dkst: 208, 74%, 10%;
 
     --clr-secondary: 27, 98%, 54%;
 
@@ -66,6 +68,11 @@
 
     /* Other */
     --container-width: 120rem; /* 114rem */
+    --img-overlay: linear-gradient(
+        to bottom right,
+        hsla(var(--clr-primary-dkr), 0.35),
+        hsla(var(--clr-primary-dkst), 0.35)
+    );
 }
 
 /* ***************************** */

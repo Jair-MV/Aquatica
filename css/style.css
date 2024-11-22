@@ -1,4 +1,17 @@
 /* *********************************** */
+/* BACKGROUND IMAGE */
+/* *********************************** */
+.bg-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-image: var(--img-overlay), url("../img/hero-img.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* *********************************** */
 /* HEADER */
 /* *********************************** */
 .header {
