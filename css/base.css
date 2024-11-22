@@ -28,6 +28,7 @@
     hsl(208, 74%, 10%)
 
     hsl(27, 98%, 54%)
+    hsl(24, 94%, 50%)
 */
 
 /* *********************************** */
@@ -59,7 +60,7 @@
     --clr-secondary-ltst: ;
 
     --clr-secondary-dk: ;
-    --clr-secondary-dkr: ;
+    --clr-secondary-dkr: 24, 94%, 50%;
     --clr-secondary-dkst: ;
 
     /* Font */
@@ -69,11 +70,16 @@
 
     /* Other */
     --container-width: 120rem; /* 114rem */
+
     --img-overlay: linear-gradient(
         to bottom right,
         hsla(var(--clr-primary-dkr), 0.35),
         hsla(var(--clr-primary-dkst), 0.35)
     );
+
+    --border-radius-sm: 5px;
+    --border-radius-md: 15px;
+    --border-radius-bg: 30px;
 }
 
 /* ***************************** */
@@ -140,6 +146,17 @@ a {
 
 .btn-cta {
     display: inline-block;
+    padding: 1.6rem 2.4rem;
+    font-size: 2.2rem;
+    font-weight: 1000;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease-out;
+    border-radius: var(--border-radius-md) 0 var(--border-radius-md) 0;
+    background-color: hsl(var(--clr-secondary));
+}
+
+.btn-cta:hover {
+    background-color: hsl(var(--clr-secondary-dkr));
 }
 
 .underline::before {
@@ -150,7 +167,7 @@ a {
     bottom: var(--bottom-distance, 0);
     width: 100%;
     height: var(--thickness, 3px);
-    border-radius: 5px;
+    border-radius: var(--border-radius-sm);
     background-color: hsl(var(--clr-secondary));
 }
 
