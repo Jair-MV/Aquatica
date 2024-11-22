@@ -69,3 +69,47 @@
     gap: 9.6rem;
     padding: 9.6rem 2.5rem;
 }
+
+.about-us-description {
+    margin: 2rem 0 3rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.values-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+.values-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 250px;
+}
+
+.value-icon {
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 2.4rem;
+    border-radius: 50%;
+    background-color: #ffd8a8;
+}
+
+.values-list span:first-of-type {
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.values-list span:last-of-type {
+    line-height: 1.35;
+    color: hsl(var(--clr-base-lt));
+    text-align: center;
+}
+
+.about-us-img {
+    border-radius: var(--border-radius-bg);
+}
