@@ -1,0 +1,28 @@
+/* *********************************** */
+/* HEADER */
+/* *********************************** */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 1rem 4rem;
+}
+
+.logo {
+    padding: 1rem;
+    font-size: 4.7rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.8rem;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 1rem;
+}
