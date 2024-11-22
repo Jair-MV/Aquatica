@@ -59,3 +59,13 @@
     font-size: 1.8rem;
     line-height: 1.5;
 }
+
+/* *********************************** */
+/* ABOUT US */
+/* *********************************** */
+.section-about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9.6rem;
+    padding: 9.6rem 2.5rem;
+}
