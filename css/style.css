@@ -113,3 +113,18 @@
 .about-us-img {
     border-radius: var(--border-radius-bg);
 }
+
+/* *********************************** */
+/* STAFF */
+/* *********************************** */
+.section-staff {
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+    padding: 9.6rem 3rem;
+}
+
+.staff-description {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
