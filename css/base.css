@@ -23,11 +23,13 @@
     hsl(0, 0%, 20%)
 
     hsl(208, 80%, 52%)
+    hsl(206, 100%, 82%)
     hsl(205, 100%, 95%)
     hsl(208, 74%, 21%)
     hsl(208, 74%, 10%)
 
     hsl(27, 98%, 54%)
+    hsl(33, 100%, 83%)
     hsl(24, 94%, 50%)
 */
 
@@ -46,7 +48,7 @@
     --clr-primary: 208, 80%, 52%;
 
     --clr-primary-lt: ;
-    --clr-primary-ltr: ;
+    --clr-primary-ltr: 206, 100%, 82%;
     --clr-primary-ltst: 205, 100%, 95%;
 
     --clr-primary-dk: ;
@@ -56,7 +58,7 @@
     --clr-secondary: 27, 98%, 54%;
 
     --clr-secondary-lt: ;
-    --clr-secondary-ltr: ;
+    --clr-secondary-ltr: 33, 100%, 83%;
     --clr-secondary-ltst: ;
 
     --clr-secondary-dk: ;
@@ -185,6 +187,13 @@ a {
 
 .underline--animated:hover::before {
     width: 100%;
+}
+
+.icon {
+    display: inline-block;
+    padding: 0.7em;
+    border-radius: 50%;
+    background-color: hsl(var(--icon-color));
 }
 
 /* *********************************** */
