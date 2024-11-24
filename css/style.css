@@ -101,12 +101,6 @@
     font-weight: 500;
 }
 
-.values-list span:last-of-type {
-    line-height: 1.35;
-    color: hsl(var(--clr-base-lt));
-    text-align: center;
-}
-
 .about-us-img {
     border-radius: var(--border-radius-bg);
 }
