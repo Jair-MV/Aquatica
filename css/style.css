@@ -178,3 +178,67 @@
 .certificates__list .icon {
     background-color: hsl(var(--clr-primary-ltr));
 }
+
+/* *********************************** */
+/* COURSES */
+/* *********************************** */
+.section-courses {
+    padding: 9.6rem 2rem;
+}
+
+.courses-description {
+    max-width: 800px;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.course {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    border-radius: var(--border-radius-bg);
+    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.1);
+}
+
+.course > div:first-child {
+    padding: 2.5rem;
+}
+
+.list-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.list-items {
+    display: flex;
+    padding-left: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.list-items li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.course .icon {
+    font-size: 1rem;
+    background-color: hsl(var(--clr-primary-ltr));
+}
+
+.course-footer span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.course img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-bg);
+}
