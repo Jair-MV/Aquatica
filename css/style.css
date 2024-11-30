@@ -358,22 +358,22 @@
     gap: 3rem;
 }
 
-.form-field > div {
+.cta-form__field-b {
     display: flex;
     flex-direction: column;
 }
 
-.form-field__label {
+.cta-form__label {
     font-size: 3rem;
 }
 
-.form-field__input {
+.cta-form__input {
     padding: 1.5rem 0;
     border: none;
     border-bottom: 1px solid black;
 }
 
-.form-field .btn-cta {
+.cta-form .btn-cta {
     align-self: flex-end;
 }
 
