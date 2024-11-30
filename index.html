@@ -244,7 +244,7 @@
                             >mejores</span
                         >
                     </h2>
-                    <p class="staff-description">
+                    <p class="section-staff__description">
                         En Aquatica, nuestros instructores no solo enseñan a
                         nadar, sino que inspiran confianza, motivan a
                         <span class="underline u-position-relative"
@@ -270,7 +270,7 @@
                         >
                         aquí
                     </h2>
-                    <p class="courses-description">
+                    <p class="section-courses__description">
                         En Aquatica, ofrecemos clases diseñadas para cada etapa
                         de la vida y nivel de habilidad. Desde los primeros
                         chapuzones hasta el perfeccionamiento técnico, nuestros
@@ -282,12 +282,15 @@
                 </div>
 
                 <article class="course">
-                    <div class="flow" style="--flow-space: 3rem">
-                        <header class="course-header">
+                    <div
+                        class="course__text-content flow"
+                        style="--flow-space: 3rem"
+                    >
+                        <header class="course__header">
                             <h3 class="heading-tertiary">
                                 Clases para Bebés y Padres
                             </h3>
-                            <p class="course-description">
+                            <p class="course__description">
                                 ¡Los primeros chapuzones! Estas clases están
                                 diseñadas para bebés de 6 meses a 3 años,
                                 <span class="underline u-position-relative"
@@ -299,23 +302,23 @@
                         </header>
 
                         <div class="list">
-                            <p class="list-title">Incluye:</p>
-                            <ul class="list-items">
-                                <li>
+                            <p class="list__title">Incluye:</p>
+                            <ul class="list__items">
+                                <li class="list__item">
                                     <ion-icon
                                         class="icon"
                                         name="chevron-forward-outline"
                                     ></ion-icon
                                     >Adaptación temprana al agua
                                 </li>
-                                <li>
+                                <li class="list__item">
                                     <ion-icon
                                         class="icon"
                                         name="chevron-forward-outline"
                                     ></ion-icon
                                     >Juegos acuáticos interactivos
                                 </li>
-                                <li>
+                                <li class="list__item">
                                     <ion-icon
                                         class="icon"
                                         name="chevron-forward-outline"
@@ -325,12 +328,23 @@
                             </ul>
                         </div>
 
-                        <div class="course-footer">
-                            <p><span>Duración:</span> 30 minutos por sesión</p>
-                            <p><span>Nivel:</span> Principiantes</p>
-                            <p><span>Edades:</span> 6 meses a 3 años</p>
-                            <p>
-                                <span>Certificación del intructor:</span>
+                        <div class="course__footer">
+                            <p class="course__data">
+                                <span class="course__data-text">Duración:</span>
+                                30 minutos por sesión
+                            </p>
+                            <p class="course__data">
+                                <span class="course__data-text">Nivel:</span>
+                                Principiantes
+                            </p>
+                            <p class="course__data">
+                                <span class="course__data-text">Edades:</span> 6
+                                meses a 3 años
+                            </p>
+                            <p class="course__data">
+                                <span class="course__data-text"
+                                    >Certificación del intructor:</span
+                                >
                                 Especialista en Enzeñanza Infantil Acuática
                             </p>
                         </div>
@@ -338,6 +352,7 @@
 
                     <div>
                         <img
+                            class="course__img"
                             src="img/mariposa.jpg"
                             alt="Niño nadando estilo mariposa"
                         />
