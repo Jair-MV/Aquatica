@@ -253,7 +253,7 @@
     padding: 9.6rem 2rem;
 }
 
-.testimonials-container {
+.section-testimonials__inner {
     margin-left: auto;
 }
 
@@ -265,13 +265,13 @@
     border-radius: var(--border-radius-bg);
 }
 
-.testimonial > div {
+.testimonial__text {
     display: flex;
     gap: 5rem;
     margin-bottom: 3rem;
 }
 
-.testimonial-face {
+.testimonial__face {
     width: 100px;
     border-radius: 50%;
     flex-shrink: 0;
@@ -280,13 +280,13 @@
     overflow: hidden;
 }
 
-.testimonial-text {
+.testimonial__quote {
     font-size: 1.8rem;
     line-height: 1.5;
     font-style: italic;
 }
 
-.testimonial-name {
+.testimonial__name {
     text-align: right;
     font-style: italic;
     color: hsl(var(--clr-base-lt));
@@ -311,7 +311,7 @@
     background-position: center;
 }
 
-.benefit-text {
+.benefit__text {
     color: hsl(var(--clr-primary-ltst));
     font-size: 2.2rem;
     line-height: 1.3;
