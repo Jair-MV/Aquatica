@@ -29,13 +29,13 @@
     letter-spacing: 1.5px;
 }
 
-.main-nav ul {
+.main-nav__list {
     display: flex;
     gap: 3rem;
     font-size: 1.8rem;
 }
 
-.main-nav a {
+.main-nav__link {
     display: inline-block;
     padding: 1rem;
 }
@@ -48,14 +48,14 @@
     position: relative;
 }
 
-.hero-text {
+.section-hero__inner {
     position: absolute;
     right: 0;
     bottom: 6%;
     max-width: 550px;
 }
 
-.hero-description {
+.section-hero__description {
     font-size: 1.8rem;
     line-height: 1.5;
 }
@@ -63,14 +63,14 @@
 /* *********************************** */
 /* ABOUT US */
 /* *********************************** */
-.section-about-us {
+.section-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 9.6rem;
     padding: 9.6rem 2.5rem;
 }
 
-.about-us-description {
+.about__description {
     margin: 2rem 0 3rem;
     font-size: 1.8rem;
     line-height: 1.7;
@@ -83,7 +83,7 @@
     row-gap: 2rem;
 }
 
-.values-list li {
+.values-list__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,13 +95,13 @@
     background-color: hsl(var(--clr-secondary-ltr));
 }
 
-.values-list span:first-of-type {
+.values-list__text:first-of-type {
     margin: 2rem 0 1rem;
     font-size: 2rem;
     font-weight: 500;
 }
 
-.about-us-img {
+.about__img {
     border-radius: var(--border-radius-bg);
 }
 
@@ -130,7 +130,7 @@
     gap: 2rem;
 }
 
-.instructor-card__header img {
+.instructor-card__img {
     width: 120px;
     border-radius: var(--border-radius-md);
 }
@@ -139,12 +139,12 @@
     line-height: 1.2;
 }
 
-.instructor-name {
+.instructor-card__name {
     font-size: 2.2rem;
     font-weight: 500;
 }
 
-.instructor-rol {
+.instructor-card__rol {
     color: hsl(var(--clr-base-lt));
 }
 
@@ -152,7 +152,7 @@
     padding: 1.8rem 0;
 }
 
-.instructor-description {
+.instructor-card__description {
     line-height: 1.4;
 }
 
@@ -168,7 +168,7 @@
     gap: 1rem;
 }
 
-.certificates__list li {
+.certificates__item {
     display: flex;
     align-items: center;
     gap: 1rem;

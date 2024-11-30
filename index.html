@@ -28,35 +28,35 @@
             >
 
             <nav class="main-nav">
-                <ul>
-                    <li>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
                         <a
                             href="#about"
-                            class="underline underline--animated u-position-relative"
+                            class="main-nav__link underline underline--animated u-position-relative"
                             style="--thickness: 4px"
                             >Conócenos</a
                         >
                     </li>
-                    <li>
+                    <li class="main-nav__item">
                         <a
                             href="#staff"
-                            class="underline underline--animated u-position-relative"
+                            class="main-nav__link underline underline--animated u-position-relative"
                             style="--thickness: 4px"
                             >Equipo</a
                         >
                     </li>
-                    <li>
+                    <li class="main-nav__item">
                         <a
                             href="#courses"
-                            class="underline underline--animated u-position-relative"
+                            class="main-nav__link underline underline--animated u-position-relative"
                             style="--thickness: 4px"
                             >Cursos</a
                         >
                     </li>
-                    <li>
+                    <li class="main-nav__item">
                         <a
                             href="#testimonials"
-                            class="underline underline--animated u-position-relative"
+                            class="main-nav__link underline underline--animated u-position-relative"
                             >Lo que dicen</a
                         >
                     </li>
@@ -66,7 +66,10 @@
 
         <main>
             <section class="section-hero">
-                <div class="hero-text flow" style="--flow-space: 1.5rem">
+                <div
+                    class="section-hero__inner flow"
+                    style="--flow-space: 1.5rem"
+                >
                     <h1 class="heading-primary">
                         Dónde cada brazada cuenta para tu
                         <span
@@ -75,7 +78,7 @@
                             >felicidad</span
                         >.
                     </h1>
-                    <p class="hero-description">
+                    <p class="section-hero__description">
                         En Aquatica, ofrecemos clases para todas las edades, en
                         un ambiente seguro y divertido. ¡Sumérgete y descubre la
                         alegría de nadar!
@@ -84,7 +87,7 @@
                 </div>
             </section>
 
-            <section id="about" class="section-about-us container">
+            <section id="about" class="section-about container">
                 <div class="flow" style="--flow-space: 5.5rem">
                     <h2 class="heading-secondary">
                         Lo que nos hace
@@ -96,7 +99,7 @@
                     </h2>
                     <div>
                         <div
-                            class="about-us-description flow"
+                            class="about__description flow"
                             style="--flow-space: 1.5rem"
                         >
                             <p>
@@ -128,57 +131,60 @@
                         </div>
                     </div>
                     <ul class="values-list">
-                        <li>
+                        <li class="values-list__item">
                             <ion-icon
                                 class="icon"
                                 name="shield-outline"
                             ></ion-icon>
-                            <span>Seguridad</span>
+                            <span class="values-list__text">Seguridad</span>
                         </li>
-                        <li>
+                        <li class="values-list__item">
                             <ion-icon
                                 class="icon"
                                 name="happy-outline"
                             ></ion-icon>
-                            <span>Diversión</span>
+                            <span class="values-list__text">Diversión</span>
                         </li>
-                        <li>
+                        <li class="values-list__item">
                             <ion-icon
                                 class="icon"
                                 name="trending-up-outline"
                             ></ion-icon>
-                            <span>Crecimiento Personal</span>
+                            <span class="values-list__text"
+                                >Crecimiento Personal</span
+                            >
                         </li>
-                        <li>
+                        <li class="values-list__item">
                             <ion-icon
                                 class="icon"
                                 name="heart-outline"
                             ></ion-icon>
-                            <span>Confianza</span>
+                            <span class="values-list__text">Confianza</span>
                         </li>
                     </ul>
                 </div>
                 <img
                     src="img/nado-mariposa.jpg"
                     alt="Nadador haciendo mariposa"
-                    class="about-us-img"
+                    class="about__img"
                 />
             </section>
 
             <section id="staff" class="section-staff container">
-                <div class="staff">
+                <div class="section-staff__staff">
                     <article class="instructor-card">
                         <header class="instructor-card__header">
                             <img
+                                class="instructor-card__img"
                                 src="img/staff/profesor-alejandro.jpg"
                                 alt="Instructor Alejandro"
                             />
 
                             <div class="instructor-card__header-text flow">
-                                <p class="instructor-name">
+                                <p class="instructor-card__name">
                                     Alejandro Martínez
                                 </p>
-                                <p class="instructor-rol">
+                                <p class="instructor-card__rol">
                                     Instructor de Clases para Adultos
                                 </p>
                             </div>
@@ -188,7 +194,7 @@
                             class="instructor-card__body flow"
                             style="--flow-space: 2rem"
                         >
-                            <p class="instructor-description">
+                            <p class="instructor-card__description">
                                 Con más de 10 años de experiencia, Alejandro se
                                 especializa en trabajar con adultos que buscan
                                 superar el miedo al agua y perfeccionar su
@@ -202,21 +208,21 @@
                                 </p>
 
                                 <ul class="certificates__list">
-                                    <li>
+                                    <li class="certificates__item">
                                         <ion-icon
                                             class="icon"
                                             name="medal-outline"
                                         ></ion-icon
                                         >Rescate Acuático
                                     </li>
-                                    <li>
+                                    <li class="certificates__item">
                                         <ion-icon
                                             class="icon"
                                             name="medal-outline"
                                         ></ion-icon
                                         >Técnicas de Enseñanza para Adultos
                                     </li>
-                                    <li>
+                                    <li class="certificates__item">
                                         <ion-icon
                                             class="icon"
                                             name="medal-outline"
