@@ -332,28 +332,28 @@
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 }
 
-.cta-form img {
+.cta-form__img {
     border-radius: var(--border-radius-bg);
 }
 
-.cta-form > div {
+.cta-form__text-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem;
 }
 
-.cta-form-title {
+.cta-form__title {
     font-size: 2.4rem;
     font-weight: 500;
 }
 
-.cta-form-description {
+.cta-form__description {
     font-size: 1.8rem;
     line-height: 1.5;
 }
 
-.form-field {
+.cta-form__field {
     display: flex;
     gap: 3rem;
 }
@@ -363,11 +363,11 @@
     flex-direction: column;
 }
 
-.form-field label {
+.form-field__label {
     font-size: 3rem;
 }
 
-.form-field input {
+.form-field__input {
     padding: 1.5rem 0;
     border: none;
     border-bottom: 1px solid black;
