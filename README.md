@@ -4,7 +4,7 @@
 
 Este proyecto es una landing page para Aquatica, una escuela de natación ficticia. Su propósito principal es poner en práctica las habilidades adquiridas en desarrollo, diseño y planeación, aplicando tecnologías como HTML, CSS, y Git.
 
-## Tablea de contenidos
+## Tabla de contenidos
 
 -   [Características principales](#características-principales)
 -   [Tecnologías utilizadas](#tecnologías-utilizadas)
