@@ -71,23 +71,34 @@
 }
 
 .about__description {
-    margin: 2rem 0 3rem;
+    margin-top: 2rem;
     font-size: 1.8rem;
     line-height: 1.7;
 }
 
 .values-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
 }
 
 .values-list__item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    flex-basis: 250px;
+    gap: 1.6rem;
+}
+
+.values-list__item:nth-child(2) {
+    transform: translateX(30%);
+}
+
+.values-list__item:nth-child(3) {
+    transform: translateX(60%);
+}
+
+.values-list__item:nth-child(4) {
+    transform: translateX(90%);
 }
 
 .values-list .icon {
@@ -116,6 +127,9 @@
 
 .instructor-card {
     max-width: 350px;
+    padding: 2rem;
+    border-radius: var(--border-radius-bg);
+    background-color: hsl(var(--clr-primary-ltst));
 }
 
 .instructor-card__header {
@@ -187,7 +201,7 @@
 }
 
 .section-courses__description {
-    max-width: 800px;
+    max-width: 650px;
     margin-top: 2rem;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -206,7 +220,11 @@
 }
 
 .course__text-content {
-    padding: 2.5rem;
+    padding: 3.5rem;
+}
+
+.course__description {
+    margin-top: 1rem;
 }
 
 .list__title {
@@ -232,9 +250,16 @@
     background-color: hsl(var(--clr-primary-ltr));
 }
 
-.course__data-text {
-    font-size: 2rem;
-    font-weight: 600;
+.course__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course__data {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.7rem;
 }
 
 .course__img {
@@ -261,7 +286,7 @@
     max-width: 600px;
     padding: 2rem;
     /* border: 1px solid black; */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: var(--border-radius-bg);
 }
 
@@ -306,16 +331,35 @@
     aspect-ratio: 1;
     padding: 1.5rem;
     border-radius: var(--border-radius-bg);
-    background-image: var(--img-overlay), url("../img/competencia.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.benefit:nth-child(1) {
+    background-image: var(--img-overlay), url("../img/benefits/musculos.jpg");
+}
+
+.benefit:nth-child(2) {
+    background-image: var(--img-overlay), url("../img/benefits/confianza.jpg");
+}
+
+.benefit:nth-child(3) {
+    background-image: var(--img-overlay),
+        url("../img/benefits/coordinacion.jpg");
+}
+
+.benefit:nth-child(4) {
+    background-image: var(--img-overlay), url("../img/benefits/amistad.jpg");
+}
+
+.benefit:nth-child(5) {
+    background-image: var(--img-overlay), url("../img/benefits/estres.jpg");
 }
 
 .benefit__text {
     color: hsl(var(--clr-primary-ltst));
     font-size: 2.2rem;
-    line-height: 1.3;
-    text-align: center;
+    line-height: 1;
 }
 
 /* *********************************** */
@@ -333,48 +377,40 @@
 }
 
 .cta-form__img {
+    height: 100%;
+    object-fit: cover;
     border-radius: var(--border-radius-bg);
 }
 
 .cta-form__text-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 3rem;
 }
 
-.cta-form__title {
-    font-size: 2.4rem;
-    font-weight: 500;
-}
-
 .cta-form__description {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
     font-size: 1.8rem;
     line-height: 1.5;
 }
 
 .cta-form__field {
-    display: flex;
-    gap: 3rem;
-}
-
-.cta-form__field-b {
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
 }
 
 .cta-form__label {
-    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .cta-form__input {
-    padding: 1.5rem 0;
+    padding: 1rem 1rem 0.5rem;
+    font-size: 1.8rem;
     border: none;
-    border-bottom: 1px solid black;
-}
-
-.cta-form .btn-cta {
-    align-self: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* *********************************** */
