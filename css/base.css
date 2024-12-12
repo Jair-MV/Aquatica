@@ -154,7 +154,7 @@ a {
 }
 
 .heading-tertiary {
-    font-size: 2.4rem;
+    font-size: 2.65rem;
 }
 
 .btn-cta {
@@ -165,7 +165,7 @@ a {
     letter-spacing: 1.5px;
     color: hsl(var(--clr-primary-ltst));
     transition: all 0.3s ease-out;
-    border-radius: var(--border-radius-md) 0 var(--border-radius-md) 0;
+    border-radius: var(--border-radius-bg);
     background-color: hsl(var(--clr-secondary));
     border: none;
     cursor: pointer;
