@@ -30,6 +30,7 @@
 
     hsl(27, 98%, 54%)
     hsl(33, 100%, 83%)
+    hsl(33, 100%, 90%)
     hsl(24, 94%, 50%)
 */
 
@@ -59,7 +60,7 @@
 
     --clr-secondary-lt: ;
     --clr-secondary-ltr: 33, 100%, 83%;
-    --clr-secondary-ltst: ;
+    --clr-secondary-ltst: 33, 100%, 90%;
 
     --clr-secondary-dk: ;
     --clr-secondary-dkr: 24, 94%, 50%;
@@ -205,11 +206,45 @@ a {
 
 .shape {
     position: absolute;
-    right: 0;
-    bottom: 0;
     width: 200px;
 
     animation: rotate 20s linear infinite;
+}
+
+.slider {
+    position: relative;
+
+    border-radius: var(--border-radius-bg);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.1);
+}
+
+.slider__slides {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.slider__slide {
+    position: absolute;
+
+    width: 100%;
+
+    transition: all 0.3s ease;
+}
+
+.slider__buttons {
+    position: absolute;
+    bottom: -15%;
+}
+
+.slider__button {
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
+    border-radius: var(--border-radius-md);
+    border: none;
+    background-color: hsl(33, 100%, 90%);
+    cursor: pointer;
 }
 
 @keyframes rotate {
