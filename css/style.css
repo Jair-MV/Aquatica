@@ -120,6 +120,7 @@
 /* STAFF */
 /* *********************************** */
 .section-staff {
+    position: relative;
     display: grid;
     grid-template-columns: 70fr 30fr;
     padding: 9.6rem 3rem;
