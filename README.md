@@ -41,8 +41,8 @@ El proyecto está **en desarrollo**, adaptado solo para escritorio.
 
 ### Próximos pasos:
 
-1. Implementar un slider con JavaScript.
-2. Mejorar el copy y el diseño visual.
+1. Implementar un slider con JavaScript. ✅
+2. Mejorar el copy y el diseño visual. ✅
 3. Hacer la página responsive para tablets y móviles.
 4. Optimizar imágenes y animar elementos (incluidos SVGs).
 
@@ -53,6 +53,8 @@ El proyecto está **en desarrollo**, adaptado solo para escritorio.
 ![](./readme-imgs/sketch-2.png)
 **Captura de la página terminada:**
 ![](./readme-imgs/aquatica-screenshot.jpg)
+**Captura del nuevo diseño:**
+![](./readme-imgs/aquatica-redesign.png)
 
 ## Aprendizajes
 
