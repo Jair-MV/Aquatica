@@ -1,0 +1,186 @@
+/* *********************************** */
+/* BELOW 1200px (Landscape tablets) */
+/* *********************************** */
+@media (max-width: 1200px) {
+    html {
+        font-size: 58%;
+    }
+
+    /* *********************************** */
+    /* STAFF */
+    /* *********************************** */
+    .section-staff {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 9.6rem 3rem;
+    }
+
+    .shape {
+        width: 150px;
+    }
+
+    .section-staff__shape {
+        right: 10%;
+    }
+
+    /* *********************************** */
+    /* COURSES */
+    /* *********************************** */
+    .section-courses__slider {
+        max-width: 800px;
+        margin: 8rem auto;
+    }
+
+    /* *********************************** */
+    /* TESTIMONIALS */
+    /* *********************************** */
+    .section-testimonials {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .benefits-row {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+/* *********************************** */
+/* BELOW 940px (Portrait tablets) */
+/* *********************************** */
+@media (max-width: 940px) {
+    html {
+        font-size: 53%;
+    }
+
+    /* *********************************** */
+    /* HEADER */
+    /* *********************************** */
+    .header {
+        position: relative;
+    }
+
+    .mobile-nav-button {
+        display: inline-block;
+        z-index: 10;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 5;
+
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+
+        transform: translateY(100%);
+
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.21);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.3px);
+        -webkit-backdrop-filter: blur(11.3px);
+
+        transition: all 0.3s ease-in-out;
+    }
+
+    .open-nav .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .main-nav__list {
+        align-items: center;
+        flex-direction: column;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+}
+
+/* *********************************** */
+/* BELOW 798px */
+/* *********************************** */
+@media (max-width: 798px) {
+    /* *********************************** */
+    /* HERO */
+    /* *********************************** */
+    .section-hero__inner {
+        padding: 0 2rem;
+    }
+
+    /* *********************************** */
+    /* ABOUT US */
+    /* *********************************** */
+    .section-about {
+        grid-template-columns: 50%;
+        grid-template-columns: minmax(38rem, 60rem);
+        justify-content: center;
+    }
+
+    /* *********************************** */
+    /* STAFF */
+    /* *********************************** */
+    .section-staff__shape {
+        display: none;
+    }
+
+    .section-staff {
+        position: relative;
+        grid-template-columns: minmax(38rem, 60rem);
+        justify-content: center;
+        gap: 8.6rem;
+    }
+
+    .staff-text {
+        grid-row: 1;
+    }
+
+    .section-staff__slider {
+        margin: 0 auto;
+    }
+
+    /* *********************************** */
+    /* COURSES */
+    /* *********************************** */
+    .section-courses__slider {
+        max-width: 600px;
+    }
+
+    .course {
+        grid-template-columns: 1fr;
+    }
+
+    .course__img {
+        width: 100%;
+        height: 150px;
+    }
+
+    /* *********************************** */
+    /* TESTIMONIALS */
+    /* *********************************** */
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    /* *********************************** */
+    /* CTA */
+    /* *********************************** */
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-form__img {
+        width: 100%;
+        height: 200px;
+    }
+}
