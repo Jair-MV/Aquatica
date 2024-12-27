@@ -29,6 +29,17 @@
     letter-spacing: 1.5px;
 }
 
+.mobile-nav-button {
+    display: none;
+    padding: 0.5rem;
+    aspect-ratio: 1;
+    font-size: 4rem;
+    cursor: pointer;
+    background-color: hsl(var(--clr-primary-ltst));
+    border: none;
+    border-radius: var(--border-radius-sm);
+}
+
 .main-nav__list {
     display: flex;
     gap: 3rem;
