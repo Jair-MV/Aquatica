@@ -44,7 +44,7 @@ El proyecto está **en desarrollo**, adaptado solo para escritorio.
 1. Implementar un slider con JavaScript. ✅
 2. Mejorar el copy y el diseño visual. ✅
 3. Hacer la página responsive para tablets y móviles. ✅
-4. Optimizar imágenes y animar elementos (incluidos SVGs).
+4. Optimizar imágenes y animar elementos (incluidos SVGs). ✅
 
 ## Vista previa
 
