@@ -83,8 +83,6 @@ function setupSlider(selector) {
 
 setupSlider(".section-staff__slider");
 setupSlider(".section-courses__slider");
-<<<<<<< HEAD
-=======
 
 // Make mobile navigation work
 const btnNavEl = document.querySelector(".mobile-nav-button");
@@ -93,4 +91,3 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
     headerEl.classList.toggle("open-nav");
 });
->>>>>>> development

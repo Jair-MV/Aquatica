@@ -6,9 +6,37 @@
     z-index: -1;
     width: 100%;
     height: 100vh;
-    background-image: var(--img-overlay), url("../img/hero-img.jpg");
+    background-image: var(--img-overlay), url("../img/Hero/hero-img-1440w.jpg");
     background-size: cover;
     background-position: bottom;
+}
+
+@media (min-width: 1441px) {
+    .bg-img {
+        background-image: var(--img-overlay),
+            url("../img/Hero/hero-img-2560w.jpg");
+    }
+}
+
+@media (max-width: 1200px) {
+    .bg-img {
+        background-image: var(--img-overlay),
+            url("../img/Hero/hero-img-1200w.jpg");
+    }
+}
+
+@media (max-width: 940px) {
+    .bg-img {
+        background-image: var(--img-overlay),
+            url("../img/Hero/hero-img-940w.jpg");
+    }
+}
+
+@media (max-width: 500px) {
+    .bg-img {
+        background-image: var(--img-overlay),
+            url("../img/Hero/hero-img-500w.jpg");
+    }
 }
 
 /* *********************************** */
@@ -359,24 +387,27 @@
 }
 
 .benefit:nth-child(1) {
-    background-image: var(--img-overlay), url("../img/benefits/musculos.jpg");
+    background-image: var(--img-overlay),
+        url("../img/Benefits/musculos-200w.jpg");
 }
 
 .benefit:nth-child(2) {
-    background-image: var(--img-overlay), url("../img/benefits/confianza.jpg");
+    background-image: var(--img-overlay),
+        url("../img/Benefits/confianza-200w.jpg");
 }
 
 .benefit:nth-child(3) {
     background-image: var(--img-overlay),
-        url("../img/benefits/coordinacion.jpg");
+        url("../img/Benefits/coordinacion-200w.jpg");
 }
 
 .benefit:nth-child(4) {
-    background-image: var(--img-overlay), url("../img/benefits/amistad.jpg");
+    background-image: var(--img-overlay),
+        url("../img/Benefits/amistad-200w.jpg");
 }
 
 .benefit:nth-child(5) {
-    background-image: var(--img-overlay), url("../img/benefits/estres.jpg");
+    background-image: var(--img-overlay), url("../img/Benefits/estres-200w.jpg");
 }
 
 .benefit__text {
